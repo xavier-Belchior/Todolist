@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+body {
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.container {
+    width: 500px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.input-task {
+    width: 300px;
+    height: 40px;
+    border-radius: 2rem;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+
+.btn-task {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #003929;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 15px;
+    float: right;
+    font-weight: 700;
+}
+
+.btn-task:hover {
+    opacity: 0.8;
+}
+
+.btn-task:active {
+    opacity: 0.6;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task {
+    height: 50px;
+    background: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin: 30px;
+    cursor: pointer;
+
+}
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.task:hover img{
+    opacity: 1;
+   
+}
+.done{
+    background: #8fac55;
+    text-decoration: line-through;
+}
